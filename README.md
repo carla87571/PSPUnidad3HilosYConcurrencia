@@ -6,7 +6,7 @@ Repositorio educativo con explicaciones teóricas, analogías pedagógicas, ejem
 
 ## 🗂️ Estructura del Repositorio
 
-El proyecto se encuentra organizado en 4 bloques temáticos:
+El proyecto se encuentra organizado en 5 bloques temáticos:
 
 ### 1. [`1_HilosVsProcesos/`](./1_HilosVsProcesos)
 * **Conceptos clave:** Diferencias entre procesos e hilos (memoria compartida, costo de creación, aislamiento, condiciones de carrera).
@@ -44,6 +44,18 @@ El proyecto se encuentra organizado en 4 bloques temáticos:
   6. `6_HiloConNombre.py`: Uso de `name="MiHilo"` y `current_thread().name`.
   7. `7_EsperandoConJoin.py`: Garantía del orden secuencial con `join()`.
   8. `8_VariosHilosNombreArgumentos.py`: Lista por comprensión, bucles de control y Timer recurrente.
+
+### 5. [`5_EjerciciosPracticos/`](./5_EjerciciosPracticos)
+* **Boletín Avanzado de 9 actividades:**
+  1. `1_JoinConTimeout.py`: Join con límite de tiempo e inspección con `is_alive()`.
+  2. `2_ListarHilosActivos.py`: Listar hilos vivos con `threading.enumerate()`.
+  3. `3_IdentificarHiloActual.py`: Introspección con `threading.current_thread()`.
+  4. `4_CarreraMensajes.py`: Intercalado y scheduler de CPU con 5 hilos.
+  5. `5_SimularDescargaProgreso.py`: Progreso porcentual en pasos de 25%.
+  6. `6_DetenerHiloBandera.py`: Parada limpia de un hilo con bandera booleana (`ejecutando`).
+  7. `7_HiloDevuelveValor.py`: Devolución de valores usando memoria compartida.
+  8. `8_TimerConRepeticion.py`: Timer periódico recurrente con `daemon=True`.
+  9. `9_PoolHilosManual.py`: Pool manual de trabajadores con `queue.Queue`.
 
 ---
 

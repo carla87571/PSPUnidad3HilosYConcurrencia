@@ -51,3 +51,29 @@ def main():
 if __name__ == "__main__":
     main()
 
+
+"""
+¿Y por qué con el if?
+
+El if __name__ == "__main__": es un candado de seguridad:
+
+Le dice a Python: «Presiona el botón START solo si yo misma abrí este archivo desde la terminal. Si otro archivo solo quería leer mi receta (usando import), no la arranques».
+
+En resumen:
+
+def main(): 
+→
+→ Diseña la máquina.
+if __name__ == "__main__": main() 
+→
+→ Enciende la máquina.
+"""
+
+
+"""
+# Hace exactamente lo mismo que el código de tu archivo:
+hilos = []
+for num in range(1, 4):
+    h = threading.Thread(target=tarea_con_retardo, args=(num,))
+    hilos.append(h)
+"""
